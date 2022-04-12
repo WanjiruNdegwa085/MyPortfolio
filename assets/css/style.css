@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #149ddd;
+  background: darksalmon;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -45,12 +45,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 .back-to-top i {
   font-size: 28px;
-  color: #fff;
+  color: black;
   line-height: 0;
 }
 .back-to-top:hover {
-  background: #2eafec;
-  color: #fff;
+  background: darksalmon;
+  color: black;
 }
 .back-to-top.active {
   visibility: visible;
@@ -70,33 +70,34 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
-  background: #040b14;
+  background: bisque;
   overflow-y: auto;
 }
 #header .profile img {
   margin: 15px auto;
   display: block;
   width: 120px;
-  border: 8px solid #2c2f3f;
+  border: 8px solid darksalmon;
 }
 #header .profile h1 {
   font-size: 24px;
   margin: 0;
   padding: 0;
+  color: black;
   font-weight: 600;
   -moz-text-align-last: center;
   text-align-last: center;
   font-family: "Poppins", sans-serif;
 }
 #header .profile h1 a, #header .profile h1 a:hover {
-  color: #fff;
+  color: black;
   text-decoration: none;
 }
 #header .profile .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #212431;
-  color: #fff;
+  background: darksalmon;
+  color: black;
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -107,8 +108,8 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
 }
 #header .profile .social-links a:hover {
-  background: #149ddd;
-  color: #fff;
+  background: darksalmon;
+  color: black;
   text-decoration: none;
 }
 
@@ -144,7 +145,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu a, .nav-menu a:focus {
   display: flex;
   align-items: center;
-  color: #a8a9b4;
+  color: #495057;
   padding: 12px 15px;
   margin-bottom: 8px;
   transition: 0.3s;
@@ -153,14 +154,17 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu a i, .nav-menu a:focus i {
   font-size: 24px;
   padding-right: 8px;
-  color: #6f7180;
+  color: #495057;
+  font-weight: bold;
 }
 .nav-menu a:hover, .nav-menu .active, .nav-menu .active:focus, .nav-menu li:hover > a {
   text-decoration: none;
-  color: #fff;
+  color: black;
+  font-weight: bold;
 }
 .nav-menu a:hover i, .nav-menu .active i, .nav-menu .active:focus i, .nav-menu li:hover > a i {
-  color: #149ddd;
+  color: black;
+  font-weight: bold;
 }
 
 /* Mobile Navigation */
@@ -171,10 +175,11 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 9998;
   border: 0;
   font-size: 24px;
+  font-weight: bold;
   transition: all 0.4s;
   outline: none !important;
-  background-color: #149ddd;
-  color: #fff;
+  background-color: bisque;
+  color: black;
   width: 40px;
   height: 40px;
   display: inline-flex;
@@ -239,16 +244,16 @@ h1, h2, h3, h4, h5, h6 {
   #hero {
     background-attachment: fixed;
   }
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
 }
 @media (max-width: 768px) {
   #hero h1 {
     font-size: 28px;
     line-height: 36px;
-  }
-  #hero h2 {
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 30px;
   }
 }
 
@@ -289,9 +294,19 @@ section {
   margin-bottom: 0;
 }
 
+
+
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.about{
+  background: antiquewhite;
+  -webkit-transition: background 2s; /* For Safari 3.0 to 6.0 */
+  transition: background 2s; /* For modern browsers */
+  }
+.about:hover {
+  background: floralwhite;
+  }
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
@@ -322,9 +337,15 @@ section {
 /*--------------------------------------------------------------
 # Facts
 --------------------------------------------------------------*/
-.facts {
+.facts{
+  background: antiquewhite;
+  -webkit-transition: background 2s; /* For Safari 3.0 to 6.0 */
+  transition: background 2s; /* For modern browsers */
   padding-bottom: 30px;
-}
+  }
+.facts:hover {
+  background: floralwhite;
+    }
 .facts .count-box {
   padding: 30px;
   width: 100%;
@@ -364,9 +385,20 @@ section {
   color: #1f5297;
 }
 
+
 /*--------------------------------------------------------------
 # Akills
 --------------------------------------------------------------*/
+
+.skills{
+  background: antiquewhite;
+  -webkit-transition: background 2s; /* For Safari 3.0 to 6.0 */
+  transition: background 2s; /* For modern browsers */
+  padding-bottom: 30px;
+  }
+.skills:hover {
+  background: floralwhite;
+    }
 .skills .progress {
   height: 60px;
   display: block;
@@ -400,44 +432,123 @@ section {
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
+#resume {
+  /*width: 100%;*/
+  /*height: 100vh;*/
+  background: url("../img/favicon.PNG");
+  background-size: cover;
+}
+
+.resume {
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+}
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+
+#resume:before {
+  content: "";
+  background: rgba(5, 13, 24, 0.3);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+#resume .resume-container {
+  position: relative;
+  z-index: 2;
+  min-width: 1000px;
+}
+
 .resume .resume-title {
   font-size: 26px;
   font-weight: 700;
+  margin-left: 50px;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #050d18;
+  color: white;
 }
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #1f5297;
+  border-left: 2px solid navajowhite;
   position: relative;
+}
+.resume .resume-item h2 {
+  color: black;
+}
+.resume .resume-item h3 {
+  color: black;
 }
 .resume .resume-item h4 {
   line-height: 18px;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: bolder;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #050d18;
+  color: black;
   margin-bottom: 10px;
 }
+
+.resume .resume-item p {
+  color: bisque;
+}
+
+.resume .resume-item h6 {
+  color: black;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
 .resume .resume-item h5 {
   font-size: 16px;
-  background: #e4edf9;
+  background: bisque;
   padding: 5px 15px;
   display: inline-block;
-  font-weight: 600;
+  /*font-weight: 600;*/
+  color:black;
+  font-weight: bolder;
   margin-bottom: 10px;
 }
 .resume .resume-item ul {
   padding-left: 20px;
+  color: bisque;
 }
 .resume .resume-item ul li {
   padding-bottom: 10px;
+  color: bisque;
 }
 .resume .resume-item:last-child {
   padding-bottom: 0;
+  color: bisque;
 }
 .resume .resume-item::before {
   content: "";
@@ -448,8 +559,9 @@ section {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #1f5297;
+  border: 2px solid black;
 }
+
 
 /*--------------------------------------------------------------
 # Portfolio
@@ -927,14 +1039,14 @@ section {
 --------------------------------------------------------------*/
 #footer {
   padding: 15px;
-  color: #f4f6fd;
+  color: black;
   font-size: 14px;
   position: fixed;
   left: 0;
   bottom: 0;
   width: 300px;
   z-index: 9999;
-  background: #040b14;
+  background: darksalmon;
 }
 #footer .copyright {
   text-align: center;
@@ -943,7 +1055,7 @@ section {
   padding-top: 5px;
   text-align: center;
   font-size: 13px;
-  color: #eaebf0;
+  color: black;
 }
 @media (max-width: 1199px) {
   #footer {
